@@ -1,8 +1,3 @@
-/*
-    文件名：    StringUtil.h
-    描　述：    字符串处理工具
-    创建人：    笨木头 (博客：http://www.benmutou.com)
-*/
 #ifndef StringUtil_H
 #define StringUtil_H
 

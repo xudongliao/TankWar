@@ -1,4 +1,4 @@
-#include "settingScene.h"
+﻿#include "settingScene.h"
 
 Scene * settingScene::createScene() {
 	auto scene = Scene::create();
