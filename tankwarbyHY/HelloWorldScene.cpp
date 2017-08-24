@@ -1,8 +1,4 @@
 #include "HelloWorldScene.h"
-#include "cocostudio/CocoStudio.h"
-#include "ui/CocosGUI.h"
-#include "MenuScene.h"
-#include "soundEngine.h"
 
 USING_NS_CC;
 using namespace ui;
@@ -90,6 +86,8 @@ bool HelloWorld::init()
     auto rootNode = CSLoader::createNode("MainScene.csb");
 
     addChild(rootNode);
+
+	soundEngine::KindsOfBgm(STARTBGM, (double)g_BGpercent/100);
 	/*auto button1 = (ui::Button*)rootNode->getChildByName("Button_1");//开始游戏
 	button1->addTouchEventListener([](Ref* pSender, Widget::TouchEventType type) {
 		if (type == Widget::TouchEventType::ENDED) {
@@ -107,10 +105,11 @@ bool HelloWorld::init()
 		}
 	});*/
 	auto button3 = (ui::Button*)rootNode->getChildByName("Button_3");//游戏设置
-	button3->addTouchEventListener([](Ref* pSender, Widget::TouchEventType type) {
+	button3->addTouchEventListener([=](Ref* pSender, Widget::TouchEventType type) {
 		if (type == Widget::TouchEventType::ENDED) {
+			soundEngine::StopBGMusic(STARTBGM);
 			//更换成游戏设置场景
-			Director::getInstance()->replaceScene(soundEngine::createScene());
+			Director::getInstance()->replaceScene(settingScene::createScene());
 		}
 	});
 	auto button4 = (ui::Button*)rootNode->getChildByName("Button_4");//结束游戏

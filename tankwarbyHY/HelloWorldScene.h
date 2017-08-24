@@ -2,6 +2,11 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "cocostudio/CocoStudio.h"
+#include "ui/CocosGUI.h"
+#include "soundEngine.h"
+#include "settingScene.h"
+#include "gvarible.h"
 
 class HelloWorld : public cocos2d::Layer
 {

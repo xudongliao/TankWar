@@ -1,38 +1,73 @@
-#include "SoundEngine.h"
+#include "soundEngine.h"
 
-Scene * soundEngine::createScene() {
-	auto scene = Scene::create();
-	auto layer = soundEngine::create();
-	scene->addChild(layer);
-	return scene;
-}
+int g_BGpercent = 75;
+auto audio = SimpleAudioEngine::getInstance();
 
-bool soundEngine::init() {
-	if (!Layer::init()) {
-		return false;
+void soundEngine::PreLoadBGM() {
+
+	const char* BGAudio[] = {STARTBGM, SELECTBGM ,BATTELBGM, SETTINGBGM};
+	for (auto name : BGAudio) {
+		SimpleAudioEngine::getInstance()->preloadEffect(name);
 	}
-
-	auto rootNode = CSLoader::createNode("MenuScene.csb");
-	addChild(rootNode);
-
-	SimpleAudioEngine::getInstance()->setBackgroundMusicVolume(0.5);
-	SimpleAudioEngine::getInstance()->playBackgroundMusic("backMusic.mp3", true);
-	
-	m_slider1 = (ui::Slider*)rootNode->getChildByName("Slider_3");
-	m_slider1->addEventListener(CC_CALLBACK_2(soundEngine::SliderCallBack, this));
-
-	return true;
 }
 
-void soundEngine::SliderCallBack(Ref *pSender, Slider::EventType type) {
-	
-	int percent = m_slider1->getPercent();
-
-	SimpleAudioEngine::getInstance()->setBackgroundMusicVolume(((double)percent)/100);
-
+void soundEngine::KindsOfBgm(char * pFilename, double percentage)
+{
+	audio->setBackgroundMusicVolume((double)g_BGpercent/100);
+	audio->playBackgroundMusic(pFilename, true);
 }
 
-void soundEngine::menuCallBack() {
+void soundEngine::PauseBGMusic()
+{
+	audio->pauseBackgroundMusic();
+}
 
-	Director::getInstance()->replaceScene(HelloWorld::createScene());
+void soundEngine::ResumeBGMusic()
+{
+	audio->resumeBackgroundMusic();
+}
+
+void soundEngine::StopBGMusic(char * pFilename)
+{
+	audio->stopBackgroundMusic(pFilename);
+}
+
+void soundEngine::SetBGVolume(int percentage)
+{
+	g_BGpercent = percentage;
+	audio->setBackgroundMusicVolume((double)percentage / 100);
+}
+
+void soundEngine::PreLoadSE() {
+
+	const char* SEAudio[] = { E_Add_Life, E_Bullet, E_Enemy_Bomb,  E_Hit_Obstacle, E_Metal, E_Obstacle_Bomb, 
+		E_Player_Bomb, E_Slip, E_ClickOn, E_MoveBack,E_GG };
+	for (auto name : SEAudio) {
+		SimpleAudioEngine::getInstance()->preloadEffect(name);
+	}
+}
+
+void soundEngine::KindsOfSE(char * pFilename)
+{
+	audio->playEffect(pFilename, 1.0f, 0, 1.0f);
+}
+
+void soundEngine::PauseSE()
+{
+	audio->pauseAllEffects();
+}
+
+void soundEngine::ResumeSE()
+{
+	audio->resumeAllEffects();
+}
+
+void soundEngine::StopSEMusic()
+{
+	audio->stopAllEffects();
+}
+
+void soundEngine::SetSEVolume(int percentage)
+{
+	audio->setEffectsVolume((double)percentage / 100);
 }
