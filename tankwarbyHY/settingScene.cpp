@@ -13,7 +13,6 @@ bool settingScene::init() {
 	}
 
 	soundEngine::KindsOfBgm(SETTINGBGM, (double)g_BGpercent/100);
-	soundEngine::KindsOfSE(E_ClickOn);
 
 	auto rootNode = CSLoader::createNode("MenuScene.csb");
 	addChild(rootNode);
@@ -30,7 +29,7 @@ bool settingScene::init() {
 	m_slider1->addEventListener(CC_CALLBACK_2(settingScene::SliderCallBack1, this));
 
 	m_slider2 = (ui::Slider*)rootNode->getChildByName("Slider_3_0");
-
+	m_slider2->setPercent(g_SEpercent);
 	m_slider2->addEventListener(CC_CALLBACK_2(settingScene::SliderCallBack2, this));
 
 	return true;
@@ -46,7 +45,7 @@ void settingScene::SliderCallBack1(Ref *pSender, Slider::EventType type) {
 
 void settingScene::SliderCallBack2(Ref *pSender, Slider::EventType type) {
 
-	int percent = m_slider1->getPercent();
+	int percent = m_slider2->getPercent();
 
 	soundEngine::SetSEVolume(percent);
 
@@ -55,6 +54,6 @@ void settingScene::SliderCallBack2(Ref *pSender, Slider::EventType type) {
 void settingScene::menuCallBack() {
 
 	soundEngine::StopBGMusic(SETTINGBGM);
-	soundEngine::KindsOfSE(E_MoveBack);
+	soundEngine::KindsOfSE(E_MoveBack, (double)g_SEpercent / 100);
 	Director::getInstance()->replaceScene(HelloWorld::createScene());
 }

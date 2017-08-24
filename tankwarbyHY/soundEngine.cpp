@@ -1,13 +1,15 @@
 #include "soundEngine.h"
 
 int g_BGpercent = 75;
+int g_SEpercent = 100;
+
 auto audio = SimpleAudioEngine::getInstance();
 
 void soundEngine::PreLoadBGM() {
 
-	const char* BGAudio[] = {STARTBGM, SELECTBGM ,BATTELBGM, SETTINGBGM};
+	const char* BGAudio[] = { STARTBGM, SELECTBGM ,BATTELBGM, SETTINGBGM };
 	for (auto name : BGAudio) {
-		SimpleAudioEngine::getInstance()->preloadEffect(name);
+		SimpleAudioEngine::getInstance()->preloadBackgroundMusic(name);
 	}
 }
 
@@ -47,9 +49,10 @@ void soundEngine::PreLoadSE() {
 	}
 }
 
-void soundEngine::KindsOfSE(char * pFilename)
+void soundEngine::KindsOfSE(char * pFilename, double percentage)
 {
-	audio->playEffect(pFilename, 1.0f, 0, 1.0f);
+	audio->setEffectsVolume((double)percentage / 100);
+	audio->playEffect(pFilename);
 }
 
 void soundEngine::PauseSE()
@@ -69,5 +72,6 @@ void soundEngine::StopSEMusic()
 
 void soundEngine::SetSEVolume(int percentage)
 {
+	g_SEpercent = percentage;
 	audio->setEffectsVolume((double)percentage / 100);
 }

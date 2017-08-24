@@ -87,6 +87,9 @@ bool HelloWorld::init()
 
     addChild(rootNode);
 
+	soundEngine::PreLoadBGM(); //预加载背景音乐
+	soundEngine::PreLoadSE();  //预加载音效
+
 	soundEngine::KindsOfBgm(STARTBGM, (double)g_BGpercent/100);
 	/*auto button1 = (ui::Button*)rootNode->getChildByName("Button_1");//开始游戏
 	button1->addTouchEventListener([](Ref* pSender, Widget::TouchEventType type) {
@@ -107,7 +110,9 @@ bool HelloWorld::init()
 	auto button3 = (ui::Button*)rootNode->getChildByName("Button_3");//游戏设置
 	button3->addTouchEventListener([=](Ref* pSender, Widget::TouchEventType type) {
 		if (type == Widget::TouchEventType::ENDED) {
+
 			soundEngine::StopBGMusic(STARTBGM);
+			soundEngine::KindsOfSE(E_ClickOn, (double)g_SEpercent / 100);
 			//更换成游戏设置场景
 			Director::getInstance()->replaceScene(settingScene::createScene());
 		}

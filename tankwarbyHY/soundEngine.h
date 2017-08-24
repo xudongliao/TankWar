@@ -34,7 +34,7 @@ public:
 	static void StopBGMusic(char * pFilename);  //停止背景音乐
 
 	static void PreLoadSE(); //预加载音效
-	static void KindsOfSE(char * pFilename); //音效：播放及确定音效种类
+	static void KindsOfSE(char * pFilename, double percentage); //音效：播放及确定音效种类
 	static void SetSEVolume(int percentage); //音效：设置播放音量
 	static void PauseSE(); //暂停全部音效
 	static void ResumeSE(); //恢复全部音效
