@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="32" tileheight="32" nextobjectid="7">
+ <tileset firstgid="1" source="TankWar.tsx"/>
+ <tileset firstgid="8" source="未命令.tsx"/>
+ <layer name="土地" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztzrEJADAMBLEHF95/47RZIARsFSoPrpM0AACwTl1eNv7+/AFMcgBXHiCJ
+  </data>
+ </layer>
+ <layer name="建筑" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzt07EJACAMRcG4/9JOoCjyReEO0qR4pEkVAD9qg7ndmLVXdulGsu2+s3b6vpf/AwCAPR3VbwAp
+  </data>
+ </layer>
+ <layer name="障碍" width="40" height="30" opacity="0.9">
+  <data encoding="base64" compression="zlib">
+   eJztzjEKACAMBMEg/v/NtnYqAQ04A1ffRgDU114HLOjL0ZejL0dfzu99fdotJ5/V+wBg1wBO9gBH
+  </data>
+ </layer>
+ <objectgroup name="HeroTank" visible="0">
+  <object id="1" name="HeroTank" x="102" y="380" width="47" height="48"/>
+  <object id="5" x="317" y="355" width="80" height="50"/>
+ </objectgroup>
+</map>
