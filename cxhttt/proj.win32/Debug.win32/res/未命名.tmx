@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="60" height="34" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" source="未命令.tsx"/>
+ <layer name="块层 1" width="60" height="34">
+  <data encoding="base64" compression="zlib">
+   eJztw8EJAAAMA6GD7L9z1+hDwVVTVVVVVVVVVV8/Z4MX6Q==
+  </data>
+ </layer>
+</map>

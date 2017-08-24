@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="60" height="34" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" source="TankWar.tsx"/>
+ <layer name="块层 1" width="60" height="34">
+  <data encoding="base64" compression="zlib">
+   eJztkt0KgCAMRoXo/V85uhAkmjrd3O+Bj+ymdj5XSiyuQPnz9d7Jjhs1J/6xM4vFWPKFZsIg7XCio7YT6Xm492BlX7ykAOcT/pjvUf2fy0VrekjPtrMrPZeRr6U+ZmYcIe2w4gu9z/hqdIccZu6ZCukOIBfsPmt3pOhEq9f9Obeh9NXmzX2/njrgBrtvXnxXYtG3cjdPjkBIuFa4XLX6ViR8oxDJ9SWab5IkSWKDB2NRDQE=
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.2" orientation="orthogonal" renderorder="right-down" width="60" height="34" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" source="233.tsx"/>
+ <tileset firstgid="8" source="233.tsx"/>
+ <layer name="块层 1" width="60" height="34">
+  <data encoding="base64" compression="zlib">
+   eJztlesOhSAMg4nv/9D+N7t1myLQLzHxHEhZZ6djEEIIIWR1robrDyC1Vn3O7EH0PK82VMPrYSeILrKvWk/mXE8zqjFjLiUNVDeT10z9Hf6tWenKuJaljI6mHe2FdS6SS29den8+17q+Pd6aVWOUSqajHqR7T9PSQerWQOar8xl3ZaOKpr+DtwjI/EX/l/Yh+79G64H2O6q1Eitl9i129ORBz2dAz2dwml9CCCE6N4/JAkM=
+  </data>
+ </layer>
+</map>
