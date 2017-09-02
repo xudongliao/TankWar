@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码">
+      <UniqueIdentifier>{799686bb-c1d8-40f3-8fdf-4171c438ec69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\场景关卡">
+      <UniqueIdentifier>{9432a59e-e2d6-4eb5-9f69-cdaadd67f04e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\场景关卡\场景管理">
+      <UniqueIdentifier>{f84bd4e5-7757-49ae-84e6-19c38053ad40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\控制器">
+      <UniqueIdentifier>{ed412c8b-ca4f-4f56-bf94-059d47aad71e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\控制器\移动控制器">
+      <UniqueIdentifier>{23617396-0b36-472a-852b-a10cb2b57165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\声音类">
+      <UniqueIdentifier>{dbb742ca-0ffc-462e-b4bf-a2ac1afc24a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\csv">
+      <UniqueIdentifier>{2dd8f0d5-08cb-47f1-b34c-60109d80a526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\csv\StringUtil">
+      <UniqueIdentifier>{2a6e0225-14c8-493d-829f-e00598eaf91f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\参数配置">
+      <UniqueIdentifier>{94c5862b-fb0f-49d1-9554-38e001e04a39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\实体">
+      <UniqueIdentifier>{c4822bcf-2c57-4444-b5de-42bb13259cf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\实体\实体基类">
+      <UniqueIdentifier>{05ae860d-1122-4f2b-bde0-5877f8cbd160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\实体\坦克类">
+      <UniqueIdentifier>{a514c217-55a1-4675-a461-f3d0f9f8ca5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\实体\坦克类\己方坦克">
+      <UniqueIdentifier>{f90391a8-fc21-4744-adfc-53c56c470cdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\实体\子弹类">
+      <UniqueIdentifier>{b37f09e1-037c-49c6-8f31-310fed180abd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\实体\子弹类\子弹基类">
+      <UniqueIdentifier>{52109003-bdcb-4006-bf8a-758a66ad4665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\实体\子弹类\子弹控制器">
+      <UniqueIdentifier>{3ae9c5f3-d8d3-49e4-8768-1b8e1e48c1f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\实体\基地类">
+      <UniqueIdentifier>{2d216c9f-6ffe-49f4-81d4-6dda78e5bbe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\实体\坦克类\坦克基类">
+      <UniqueIdentifier>{817881ef-0b63-4765-814f-a5391c1243cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\实体\坦克类\敌方坦克">
+      <UniqueIdentifier>{45f7f376-31a4-4958-aa08-e70f4554d217}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\实体\坦克类\坦克炮台">
+      <UniqueIdentifier>{b8d6c364-9217-4aa1-a7da-a478c0fb1788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\爆炸类">
+      <UniqueIdentifier>{4be938b1-e656-43b8-8897-1ce6995f0796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\爆炸类\爆炸管理器">
+      <UniqueIdentifier>{033b67de-ce77-4095-b98c-639374528be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\爆炸类\爆炸基类">
+      <UniqueIdentifier>{1a3d1052-f552-414a-93a4-66d6196cbb9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\实体\实体控制器">
+      <UniqueIdentifier>{74a3faca-c1ec-412e-a74f-9d79c04ec370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\实体\特殊物品类">
+      <UniqueIdentifier>{96d8c6f5-2c47-49a8-a32d-0da81dbde02b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\实体\坦克类\静止炮台">
+      <UniqueIdentifier>{e52c1d1e-f26e-4e30-860f-dd8b40fead6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\飘字类">
+      <UniqueIdentifier>{b7c10a0b-6eec-4211-9479-f661743968b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\场景关卡\场景管理\死亡场景">
+      <UniqueIdentifier>{3b0d6bb0-aea4-42d7-aa29-22a1f0a2e14a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\场景关卡\场景管理\设置场景">
+      <UniqueIdentifier>{0a082304-4c4b-499e-8673-346e3df9be0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\场景关卡\场景管理\游戏场景">
+      <UniqueIdentifier>{3a512af0-22d4-49e1-a7b7-7b4df354a758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\场景关卡\场景管理\数据层">
+      <UniqueIdentifier>{ca5bd5f9-47e6-402c-8ca6-ea5e5692e01a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\场景关卡\场景管理\关卡选择">
+      <UniqueIdentifier>{17bed94a-7b5d-4e7e-b32d-90deb924971a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\场景关卡\场景管理\暂停场景">
+      <UniqueIdentifier>{f7d81c1e-83d8-41b8-9fea-50ebb8c9d660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="坦克大战源码\控制器\移动控制器\虚拟摇杆">
+      <UniqueIdentifier>{e90ea2db-86ab-4180-b43c-c68d2ba15a8b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Entity.cpp">
+      <Filter>坦克大战源码\实体\实体基类</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TankCanon.cpp">
+      <Filter>坦克大战源码\实体\坦克类\坦克炮台</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MoveController.cpp">
+      <Filter>坦克大战源码\控制器\移动控制器</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CsvData.cpp">
+      <Filter>坦克大战源码\csv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CsvUtil.cpp">
+      <Filter>坦克大战源码\csv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StringUtil.cpp">
+      <Filter>坦克大战源码\csv\StringUtil</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HeroTank.cpp">
+      <Filter>坦克大战源码\实体\坦克类\己方坦克</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TankController.cpp">
+      <Filter>坦克大战源码\实体\实体控制器</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Joystick.cpp">
+      <Filter>坦克大战源码\控制器\移动控制器\虚拟摇杆</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TankBase.cpp">
+      <Filter>坦克大战源码\实体\坦克类\坦克基类</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\settingScene.cpp">
+      <Filter>坦克大战源码\场景关卡\场景管理\设置场景</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\soundEngine.cpp">
+      <Filter>坦克大战源码\声音类</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bullet.cpp">
+      <Filter>坦克大战源码\实体\子弹类\子弹基类</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BombM.cpp">
+      <Filter>坦克大战源码\爆炸类\爆炸管理器</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bomb.cpp">
+      <Filter>坦克大战源码\爆炸类\爆炸基类</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BulletManager.cpp">
+      <Filter>坦克大战源码\实体\子弹类\子弹控制器</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EnemyTank.cpp">
+      <Filter>坦克大战源码\实体\坦克类\敌方坦克</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HomeBase.cpp">
+      <Filter>坦克大战源码\实体\基地类</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameOpenScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\SpecialCube.cpp">
+      <Filter>坦克大战源码\实体\特殊物品类</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TowerCanon.cpp">
+      <Filter>坦克大战源码\实体\坦克类\静止炮台</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Floatword.cpp">
+      <Filter>坦克大战源码\飘字类</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameScene.cpp">
+      <Filter>坦克大战源码\场景关卡\场景管理\游戏场景</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameDataLayer.cpp">
+      <Filter>坦克大战源码\场景关卡\场景管理\数据层</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameOver.cpp">
+      <Filter>坦克大战源码\场景关卡\场景管理\死亡场景</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameSelect.cpp">
+      <Filter>坦克大战源码\场景关卡\场景管理\关卡选择</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GamePause.cpp">
+      <Filter>坦克大战源码\场景关卡\场景管理\暂停场景</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Entity.h">
+      <Filter>坦克大战源码\实体\实体基类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TankCanon.h">
+      <Filter>坦克大战源码\实体\坦克类\坦克炮台</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MoveController.h">
+      <Filter>坦克大战源码\控制器\移动控制器</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CsvData.h">
+      <Filter>坦克大战源码\csv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CsvUtil.h">
+      <Filter>坦克大战源码\csv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StringUtil.h">
+      <Filter>坦克大战源码\csv\StringUtil</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HeroTank.h">
+      <Filter>坦克大战源码\实体\坦克类\己方坦克</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TankController.h">
+      <Filter>坦克大战源码\实体\实体控制器</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EnumTankTypeConfig.h">
+      <Filter>坦克大战源码\参数配置</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Joystick.h">
+      <Filter>坦克大战源码\控制器\移动控制器\虚拟摇杆</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TankBase.h">
+      <Filter>坦克大战源码\实体\坦克类\坦克基类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\settingScene.h">
+      <Filter>坦克大战源码\场景关卡\场景管理\设置场景</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\soundEngine.h">
+      <Filter>坦克大战源码\声音类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EnemyTank.h">
+      <Filter>坦克大战源码\实体\坦克类\敌方坦克</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EnumCreateTankWithLevel.h">
+      <Filter>坦克大战源码\参数配置</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EnumMoveDirection.h">
+      <Filter>坦克大战源码\参数配置</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BombM.h">
+      <Filter>坦克大战源码\爆炸类\爆炸管理器</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bomb.h">
+      <Filter>坦克大战源码\爆炸类\爆炸基类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EnumBulletConfType.h">
+      <Filter>坦克大战源码\参数配置</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BulletManager.h">
+      <Filter>坦克大战源码\实体\子弹类\子弹控制器</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Bullet.h">
+      <Filter>坦克大战源码\实体\子弹类\子弹基类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HomeBase.h">
+      <Filter>坦克大战源码\实体\基地类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameOpenScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gvarible.h">
+      <Filter>坦克大战源码\参数配置</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SpecialCube.h">
+      <Filter>坦克大战源码\实体\特殊物品类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\EnumSpecialCubeType.h">
+      <Filter>坦克大战源码\参数配置</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TowerCanon.h">
+      <Filter>坦克大战源码\实体\坦克类\静止炮台</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Floatword.h">
+      <Filter>坦克大战源码\飘字类</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScene.h">
+      <Filter>坦克大战源码\场景关卡\场景管理\游戏场景</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameDataLayer.h">
+      <Filter>坦克大战源码\场景关卡\场景管理\数据层</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameOver.h">
+      <Filter>坦克大战源码\场景关卡\场景管理\死亡场景</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameSelect.h">
+      <Filter>坦克大战源码\场景关卡\场景管理\关卡选择</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GamePause.h">
+      <Filter>坦克大战源码\场景关卡\场景管理\暂停场景</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
